@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+  --burgundy: #7A0E12;
+  --gold: #C9A227;
+  --charcoal: #1A1A1A;
+  --ivory: #F5F2EB;
+}
+
+body {
+  font-family: var(--font-poppins);
+  background-color: var(--ivory);
+  color: var(--charcoal);
+}
+
+h1, h2, h3, .heading-font {
+  font-family: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+}

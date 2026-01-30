@@ -1,65 +1,264 @@
-import Image from "next/image";
-
+import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main>
+      <Navbar />
+
+      {/* HERO SECTION */}
+      <section className="bg-[var(--burgundy)] text-white py-24 px-6 text-center">
+        <h1 data-aos="fade-up" className="heading-font text-4xl md:text-6xl font-semibold mb-6">
+          Ahmad Kawakiby, S.H., M.H. & Partners
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200" className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+          Pendampingan hukum profesional, strategis, dan berintegritas
+          untuk melindungi hak serta kepentingan Anda.
+        </p>
+
+        <a data-aos="fade-up" data-aos-delay="400"
+          href="https://wa.me/6285342953852"
+          target="_blank"
+          className="bg-[var(--gold)] text-black font-semibold px-8 py-4 rounded-md hover:opacity-90 transition"
+        >
+          Konsultasi Sekarang via WhatsApp
+        </a>
+      </section>
+
+      {/* PROFIL ADVOKAT */}
+      <section id="profil" className="bg-[var(--ivory)] py-20 px-6">
+        <div data-aos="fade-right" className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          
+          {/* FOTO (nanti bisa diganti foto asli) */}
+          <div data-aos="fade-left" className="w-full h-[400px] bg-gray-300 rounded-lg"></div>
+
+          {/* TEKS PROFIL */}
+          <div>
+            <h2 className="heading-font text-3xl md:text-4xl text-[var(--burgundy)] mb-4">
+              Ahmad Kawakiby, S.H., M.H.
+            </h2>
+            <p className="text-[var(--gold)] font-medium mb-4">
+              Advokat & Konsultan Hukum  
+              <br />Founder Ahmad Kawakiby, S.H., M.H. & Partners
+            </p>
+
+            <p className="mb-4">
+              Ahmad Kawakiby, S.H., M.H. adalah advokat dan konsultan hukum
+              yang berpengalaman dalam menangani berbagai perkara litigasi
+              maupun non-litigasi. Dengan latar belakang pendidikan hukum yang
+              kuat serta pengalaman praktik langsung di lapangan, beliau dikenal
+              sebagai kuasa hukum yang tegas, strategis, dan berorientasi pada
+              hasil terbaik bagi klien.
+            </p>
+
+            <p>
+              Dalam menjalankan profesinya, Ahmad Kawakiby mengedepankan
+              integritas, profesionalisme, serta komitmen penuh dalam setiap
+              penanganan perkara. Selain aktif dalam praktik hukum, beliau juga
+              berperan dalam memberikan edukasi hukum kepada masyarakat melalui
+              berbagai media dan forum publik.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* BIDANG PRAKTIK HUKUM */}
+      <section id="praktik" className="bg-[var(--charcoal)] text-white py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="heading-font text-3xl md:text-4xl text-[var(--gold)] text-center mb-12">
+            Bidang Praktik Hukum
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div data-aos="fade-up" data-aos-delay="100" className="border border-[var(--gold)]/30 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Hukum Keluarga
+              </h3>
+              <p className="text-gray-300">
+                Perceraian, hak asuh anak, serta penyelesaian harta bersama (gono-gini).
+              </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" className="border border-[var(--gold)]/30 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Hukum Pidana
+              </h3>
+              <p className="text-gray-300">
+                Pendampingan hukum bagi tersangka, terdakwa, maupun korban tindak pidana.
+              </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" className="border border-[var(--gold)]/30 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Hukum Perdata
+              </h3>
+              <p className="text-gray-300">
+                Penanganan perkara wanprestasi dan perbuatan melawan hukum.
+              </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" className="border border-[var(--gold)]/30 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Hukum Bisnis & Perusahaan
+              </h3>
+              <p className="text-gray-300">
+                Konsultasi serta pendampingan hukum untuk pelaku usaha dan korporasi.
+              </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" className="border border-[var(--gold)]/30 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Pertanahan & Properti
+              </h3>
+              <p className="text-gray-300">
+                Penyelesaian sengketa tanah, sertifikat, dan permasalahan properti lainnya.
+              </p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" className="border border-[var(--gold)]/30 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Kontrak & Perjanjian
+              </h3>
+              <p className="text-gray-300">
+                Penyusunan, peninjauan, dan penyelesaian sengketa kontrak secara hukum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* REPUTASI & PENGALAMAN */}
+      <section id="pengalaman" className="bg-[var(--ivory)] py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-font text-3xl md:text-4xl text-[var(--burgundy)] text-center mb-12">
+            Reputasi & Pengalaman
+          </h2>
+
+          <div data-aos="fade-up" className="space-y-6 text-lg text-[var(--charcoal)]">
+            <div className="flex items-start gap-4">
+              <span className="text-[var(--gold)] text-2xl leading-none">✔</span>
+              <p>
+                Menangani berbagai perkara hukum di tingkat Pengadilan Negeri
+                maupun Pengadilan Agama dengan pendekatan yang strategis dan terukur.
+              </p>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <span className="text-[var(--gold)] text-2xl leading-none">✔</span>
+              <p>
+                Berpengalaman dalam penanganan perkara perceraian kompleks,
+                hak asuh anak, serta sengketa harta bersama (gono-gini).
+              </p>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <span className="text-[var(--gold)] text-2xl leading-none">✔</span>
+              <p>
+                Dipercaya sebagai kuasa hukum dalam perkara pidana serius
+                serta kasus yang mendapat perhatian publik.
+              </p>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <span className="text-[var(--gold)] text-2xl leading-none">✔</span>
+              <p>
+                Klien berasal dari berbagai latar belakang, mulai dari
+                individu, pelaku usaha, hingga perusahaan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NILAI & PRINSIP ADVOKAT */}
+      <section id="nilai" className="bg-[var(--burgundy)] text-white py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="heading-font text-3xl md:text-4xl text-[var(--gold)] text-center mb-12">
+            Nilai & Prinsip Kami
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div data-aos="zoom-in" className="bg-white/5 p-6 rounded-lg border border-[var(--gold)]/20">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Integritas
+              </h3>
+              <p className="text-gray-200">
+                Menjunjung tinggi kejujuran, etika profesi, dan kode etik advokat
+                dalam setiap penanganan perkara.
+              </p>
+            </div>
+
+            <div data-aos="zoom-in" className="bg-white/5 p-6 rounded-lg border border-[var(--gold)]/20">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Profesionalisme
+              </h3>
+              <p className="text-gray-200">
+                Bekerja berdasarkan hukum yang berlaku dengan strategi yang terukur
+                dan pendekatan yang sistematis.
+              </p>
+            </div>
+
+            <div data-aos="zoom-in" className="bg-white/5 p-6 rounded-lg border border-[var(--gold)]/20">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Keterlibatan Aktif
+              </h3>
+              <p className="text-gray-200">
+                Setiap perkara ditangani secara langsung, serius, dan penuh tanggung jawab.
+              </p>
+            </div>
+
+            <div data-aos="zoom-in" className="bg-white/5 p-6 rounded-lg border border-[var(--gold)]/20">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Kerahasiaan Klien
+              </h3>
+              <p className="text-gray-200">
+                Privasi dan kepentingan klien adalah prioritas utama dalam setiap layanan hukum.
+              </p>
+            </div>
+
+            <div data-aos="zoom-in" className="bg-white/5 p-6 rounded-lg border border-[var(--gold)]/20">
+              <h3 className="text-xl font-semibold text-[var(--gold)] mb-2">
+                Solutif & Tegas
+              </h3>
+              <p className="text-gray-200">
+                Fokus pada penyelesaian hukum terbaik dengan langkah yang tepat, cepat, dan tegas.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* KONTAK & CTA */}
+      <section id="kontak" className="bg-[var(--charcoal)] text-white py-24 px-6 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h2 data-aos="fade-up" className="heading-font text-3xl md:text-4xl text-[var(--gold)] mb-6">
+            Butuh Pendampingan Hukum?
+          </h2>
+
+          <p data-aos="fade-up" data-aos-delay="200" className="text-lg mb-10 text-gray-300">
+            Konsultasikan permasalahan hukum Anda secara langsung bersama
+            Ahmad Kawakiby, S.H., M.H. & Partners. Kami siap memberikan
+            pendampingan hukum yang profesional, strategis, dan terpercaya.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+
+          <a data-aos="fade-up" data-aos-delay="400"
+            href="https://wa.me/6285342953852"
             target="_blank"
             rel="noopener noreferrer"
+            className="bg-[var(--gold)] text-black font-semibold px-10 py-5 rounded-md text-lg hover:opacity-90 transition inline-block"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            Konsultasi via WhatsApp Sekarang
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+          <div className="mt-12 text-sm text-gray-400">
+            <p>Kantor Hukum Ahmad Kawakiby, S.H., M.H. & Partners</p>
+            <p>Makassar, Sulawesi Selatan</p>
+            <p>Melayani konsultasi hukum offline & online</p>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+    </main>
   );
 }
