@@ -5,22 +5,17 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="bg-[var(--burgundy)] text-white py-24 px-6 text-center">
-        <h1 data-aos="fade-up" className="heading-font text-4xl md:text-6xl font-semibold mb-6">
-          Ahmad Kawakiby, S.H., M.H. & Partners
-        </h1>
-        <p data-aos="fade-up" data-aos-delay="200" className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-          Pendampingan hukum profesional, strategis, dan berintegritas
-          untuk melindungi hak serta kepentingan Anda.
-        </p>
+      <section className="relative bg-[var(--burgundy)] text-white py-32 px-6 text-center overflow-hidden">
 
-        <a data-aos="fade-up" data-aos-delay="400"
-          href="https://wa.me/6285342953852"
-          target="_blank"
-          className="bg-[var(--gold)] text-black font-semibold px-8 py-4 rounded-md hover:opacity-90 transition"
-        >
-          Konsultasi Sekarang via WhatsApp
-        </a>
+      {/* Background Logo */}
+      <img
+        src="/logo-full.png"
+        alt="Background Logo"
+        className="absolute inset-0 m-auto w-[1000px] opacity-10 pointer-events-none select-none"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40"></div>
       </section>
 
       {/* PROFIL ADVOKAT */}
@@ -28,7 +23,12 @@ export default function Home() {
         <div data-aos="fade-right" className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           
           {/* FOTO (nanti bisa diganti foto asli) */}
-          <div data-aos="fade-left" className="w-full h-[400px] bg-gray-300 rounded-lg"></div>
+          <img
+            src="/profile.jpg"
+            alt="Ahmad Kawakiby, S.H., M.H."
+            data-aos="fade-left"
+            className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+          />
 
           {/* TEKS PROFIL */}
           <div>
