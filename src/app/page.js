@@ -41,8 +41,7 @@ export default function Home() {
             </p>
 
             <p className="mb-4">
-              Ahmad Kawakiby, S.H., M.H. adalah advokat dan konsultan hukum
-              yang berpengalaman dalam menangani berbagai perkara litigasi
+              Konsultan hukum yang berpengalaman dalam menangani berbagai perkara litigasi
               maupun non-litigasi. Dengan latar belakang pendidikan hukum yang
               kuat serta pengalaman praktik langsung di lapangan, beliau dikenal
               sebagai kuasa hukum yang tegas, strategis, dan berorientasi pada
