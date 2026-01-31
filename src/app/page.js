@@ -231,29 +231,56 @@ export default function Home() {
 
       {/* KONTAK & CTA */}
       <section id="kontak" className="bg-[var(--charcoal)] text-white py-24 px-6 text-center">
-        <div className="mt-16 border-t border-[var(--gold)]/20 pt-10 text-sm text-gray-400 space-y-4">
+        <div className="max-w-3xl mx-auto">
 
-          {/* Info Kantor */}
-          <div>
-            <p className="text-white font-medium">Kantor Hukum Ahmad Kawakiby, S.H., M.H. & Partners</p>
-            <p>Makassar, Sulawesi Selatan</p>
-            <p>Melayani konsultasi hukum offline & online</p>
-          </div>
+          {/* JUDUL */}
+          <h2 data-aos="fade-up" className="heading-font text-3xl md:text-4xl text-[var(--gold)] mb-6">
+            Butuh Pendampingan Hukum?
+          </h2>
 
-          {/* Social Media */}
-          <div className="flex justify-center gap-6 pt-4 text-[var(--gold)]">
-            <a href="#" target="https://www.instagram.com/kawakiby_lawyers?igsh=MXhiNWlpejJ0amFwNA%3D%3D&utm_source=qr" className="hover:opacity-80 transition">Instagram</a>
-            <a href="#" target="http://www.tiktok.com/@kawakiby_lawyers" className="hover:opacity-80 transition">Tiktok</a>
-            <a href="#" target="https://www.facebook.com/share/1MPMeWY2vf/?mibextid=wwXIfr" className="hover:opacity-80 transition">Facebook</a>
-          </div>
+          {/* DESKRIPSI */}
+          <p data-aos="fade-up" data-aos-delay="200" className="text-lg mb-10 text-gray-300">
+            Konsultasikan permasalahan hukum Anda secara langsung bersama
+            Ahmad Kawakiby, S.H., M.H. & Partners. Kami siap memberikan
+            pendampingan hukum yang profesional, strategis, dan terpercaya.
+          </p>
 
-          {/* Copyright */}
-          <div className="pt-6 text-xs text-gray-500 space-y-1">
-            <p>© {new Date().getFullYear()} Ahmad Kawakiby, S.H., M.H. & Partners. All rights reserved.</p>
-            <p className="text-gray-600">Website developed by Vernando Septian Dev.</p>
+          {/* TOMBOL WHATSAPP */}
+          <a
+            data-aos="fade-up"
+            data-aos-delay="400"
+            href="https://wa.me/6285342953852"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[var(--gold)] text-black font-semibold px-10 py-5 rounded-md text-lg hover:opacity-90 transition inline-block"
+          >
+            Konsultasi via WhatsApp Sekarang
+          </a>
+
+          {/* FOOTER INFO */}
+          <div className="mt-16 border-t border-[var(--gold)]/20 pt-10 text-sm text-gray-400 space-y-4">
+
+            <div>
+              <p className="text-white font-medium">Kantor Hukum Ahmad Kawakiby, S.H., M.H. & Partners</p>
+              <p>Makassar, Sulawesi Selatan</p>
+              <p>Melayani konsultasi hukum offline & online</p>
+            </div>
+
+            <div className="flex justify-center gap-6 pt-4 text-[var(--gold)]">
+              <a href="https://www.instagram.com/kawakiby_lawyers" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">Instagram</a>
+              <a href="https://www.tiktok.com/@kawakiby_lawyers" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">Tiktok</a>
+              <a href="https://www.facebook.com/share/1MPMeWY2vf/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition">Facebook</a>
+            </div>
+
+            <div className="pt-6 text-xs text-gray-500 space-y-1">
+              <p>© {new Date().getFullYear()} Ahmad Kawakiby, S.H., M.H. & Partners. All rights reserved.</p>
+              <p className="text-gray-600">Website developed by Vernando Septian Dev.</p>
+            </div>
+
           </div>
         </div>
       </section>
+
     </main>
   );
 }
